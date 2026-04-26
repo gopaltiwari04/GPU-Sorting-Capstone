@@ -1,0 +1,54 @@
+# ============================================================
+# .gitignore for a CUDA / C++ project
+# ============================================================
+
+# ── Compiled binaries & executables ──────────────────────────
+bin/*
+!bin/.gitkeep
+*.exe
+*.out
+*.app
+
+# ── Object files & intermediate build artifacts ───────────────
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# ── CUDA-specific artifacts ───────────────────────────────────
+*.ptx
+*.cubin
+*.fatbin
+*.sass
+*.cu.o
+
+# ── Dependency / CMake files ──────────────────────────────────
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.cmake
+*.cmake
+build/
+_build/
+
+# ── IDE & editor files ────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Logs & profiling output ───────────────────────────────────
+*.log
+*.nsys-rep
+*.nvvp
+*.qdrep
+*.sqlite
